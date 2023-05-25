@@ -28,13 +28,14 @@ body{
 }
 
 .cabecalho__nav{
+
     display: flex;
     gap: 80px;
 }
 
 .cabecalho__nav a:hover{
     color: var(--branco);
-    transition: 0.3s all;
+    transition: 0.3s ;
 }
 
 .cabecalho__menu{
@@ -87,16 +88,19 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+    position: absolute;
+    left: 72%;
+    top: 100%;
 }
 
 .botoes{
     
     justify-content: center;
-    gap: 16px;
+    gap: 20px;
     align-items: center;
     display: flex;
     border: 2px solid var(--azul);
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -110,11 +114,13 @@ body{
 
 .botoes:hover{
     background-color: var(--hover);
-    transition: 0.5s;
 }
 
 .foto{
-    width: 40%;
+    width: auto;
+    position: relative;
+    bottom: 25rem;
+    left: 10%;
 }
 
 .rodape{
@@ -129,10 +135,7 @@ body{
     font-weight: 400px;
 }
 
-.foto{
- display: flex;
 
-}
 
 @media screen and (max-width: 1200px) {
     .cabecalho{
@@ -152,21 +155,25 @@ body{
         width: auto;
     }
 
-    .rodape{
-        background-color: var(--azul);
-        justify-content: center;
+    .apresentacao__links{
         display: flex;
-        text-align: center;
-        font-family: var(--fonte-menu);
-        font-size: 1.5rem;
-        color: var(--preto);
-        padding: 23.64px 0;
-        font-weight: 400px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        position: relative;
+        left: 0%;
+        top: 0%;
     }
 
     .foto{
-        display: flex;
-        width: auto;
+        width: 50%;
+        position: relative;
+        margin-right: 20%;
+        bottom: 1rem;
     }
 
+    
+
 }
+
